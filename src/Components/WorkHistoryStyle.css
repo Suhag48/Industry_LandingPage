@@ -1,0 +1,61 @@
+.workHistory{
+    background-image: url("../assets//images/fact.jpg.webp");
+    background-size: cover;
+}
+.circle-content{
+    padding: 8rem 12rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.circle-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.circle-body h2{
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.outer-circle{
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    border-radius: 50%;
+    border: solid 2px  #fab700;
+}
+.inner-circle{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    background-color: #fab700;
+    transform: translate(29%, 29%);
+}
+
+/* responsive code start */
+@media screen and (max-width: 1110px){
+    .circle-content{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 4rem 6rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .circle-content{
+        grid-template-columns: 1fr;
+        padding: 4rem 2rem;
+    }
+}
+
+/* responsive code end */
