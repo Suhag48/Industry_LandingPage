@@ -5,7 +5,9 @@ import { BsFillRocketTakeoffFill, BsBugFill } from "react-icons/bs"
 
 const Service = () => {
     return(
-        <div className="service">
+        <div className="service" id="services" 
+            data-aos="flip-right" 
+            data-aos-duration="2000">
             <div className="service-items">
                 <div className="icon">
                     <ImMagicWand />

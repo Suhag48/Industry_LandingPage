@@ -10,7 +10,7 @@ export const MarketSectorsData = [
     },
     {
         image : image2,
-        heading: "Construction & Engineering",
+        heading: "Construction Engineering",
         text : "inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct."
     },
     {

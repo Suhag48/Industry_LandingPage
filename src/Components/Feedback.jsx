@@ -9,11 +9,8 @@ const Feedback = () => {
         AOS.init();
       }, [])
     return(
-        <div className="client-feedback">
-            <div className="feedback-content" data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-duration="3000"
-                data-aos-easing="ease-in-sine">
+        <div className="client-feedback" id="feedback">
+            <div className="feedback-content" data-aos="fade-right" data-aos-duration="2000">
                 <p>Brand new app to blow your mind</p>
                 <h2>
                     We’ve made a life
@@ -25,22 +22,19 @@ const Feedback = () => {
                 </p>
                 <button>get started now</button>
             </div>
-            <div className="feedback-form" data-aos="fade-left"
-                data-aos-anchor="#example-anchor"
-                data-aos-offset="500"
-                data-aos-duration="3000">
-                <form action="" className="form">
+            <div className="feedback-form">
+                <form action="#" className="form">
                 <h2>Request a quote</h2>
-                    <select name="" id="">
-                        <option value="">something</option>
-                        <option value="">something</option>
-                        <option value="">something</option>
-                        <option value="">something</option>
+                    <select name="quote">
+                        <option value="">Need Service</option>
+                        <option value="">Work with us</option>
+                        <option value="">Visit Us</option>
+                        <option value="">Other</option>
                     </select>
                     <input type="text" placeholder="name" className="input-field" />
                     <input type="tel" placeholder="phone" className="input-field" />
                     <input type="email" placeholder="email" className="input-field" />
-                    <textarea name="" id="" cols="30" rows="10" placeholder="message" className="message-field"></textarea>
+                    <textarea name="message" cols="30" rows="10" placeholder="message" className="message-field"></textarea>
                     <button>Request free quote</button>
                 </form>
             </div>

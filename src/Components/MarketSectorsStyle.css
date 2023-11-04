@@ -2,7 +2,7 @@
     padding: 6rem 12rem;
 }
 .marketsector h2{
-    font-size: 36px;
+    font-size: 42px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 15px;
@@ -11,46 +11,61 @@
     font-size: 1rem;
     text-align: center;
     margin-bottom: 60px;
+    color: #9e9e9e;
 }
 .carosel{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
-.carosel-info img{
-    width: 100%;
+.carosel-info{
+    min-width: 200px;
+    min-height: auto;
+}
+.carosel-info .carosel-img{
     height: auto;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+}
+.carosel-info img{
     background-size: cover;
+    transition: all ease-in-out 0.5s;
+}
+.carosel-info img:hover{
+    transform: scale(1.3);
+    cursor: pointer;
 }
 .carosel-info h3{
     font-size: 22px;
     font-weight: 600;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    transition: all ease-in-out 0.5s;
+    text-align: center;
+}
+.carosel-info h3:hover{
+    color: #fab700;
 }
 .carosel-info p{
     font-size: 1rem;
-    line-height: 22px;
+    line-height: 24px;
+    color: #9e9e9e;
+    text-align: justify;
 }
 
 /* responsive code start */
 
 @media screen and (max-width: 1100px){
     .marketsector{
-        padding: 4rem 4rem;
-    }
-    .carosel-info h3{
-        font-size: 20px;
+        padding: 4rem 6rem;
     }
     .carosel{
-        gap: 40px;
-    }
-    .carosel-info{
-        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px){
     .marketsector{
         padding: 4rem 2rem;
     }
@@ -63,7 +78,21 @@
     .carosel-info{
         width: 100%;
     }
+    .carosel-info p{
+        max-width: 55%;
+        margin: 0 auto;
+    }
 }
 
+@media screen and (max-width: 550px){
+    .marketsector{
+        padding: 2rem 1rem;
+    }
+    .carosel-info p{
+        min-width: 85%;
+        margin: 0 auto;
+        
+    }
+}
 
 /* responsive code end */

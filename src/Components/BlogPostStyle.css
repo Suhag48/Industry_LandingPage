@@ -3,7 +3,7 @@
     background-color: #f9f9ff;
 }
 .blogPost h1{
-    font-size: 52px;
+    font-size: 42px;
     font-weight: 700;
     margin-bottom: 15px;
     text-align: center;
@@ -78,9 +78,10 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 10px;
+    transition: all ease-in-out 0.5s;
 }
 .card-text h2:hover{
-    color: #BB800D;
+    color: #fab700;
 }
 .card-text p{
     font-size: 1rem;
@@ -92,23 +93,31 @@
 /* responsive code starts */
 @media screen and (max-width: 1100px){
     .blogPost{
-        padding: 2rem 4rem;
+        padding: 4rem 6rem;
     }
     .card{
-        grid-gap: 25px;
+        grid-gap: 30px;
+    }
+}
+@media screen and (max-width: 900px){
+    .card{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 768px){
+    .blogPost{
+        padding: 4rem 2rem;
+    }
     .blogPost h1{
         font-size: 32px;  
     }
-    .card{
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 550px){
+    .blogPost{
+        padding: 2rem 1rem;
+    }
     .blogPost h1{
         font-size: 24px;  
     }

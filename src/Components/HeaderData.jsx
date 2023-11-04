@@ -5,22 +5,30 @@ export const HeaderData = [
     },
     {
         item : "Services",
-        link : "/"
+        link : "#services"
+    },
+    {
+        item : "Feedback",
+        link : "#feedback"
     },
     {
         item : "Market Sector",
-        link : "/"
+        link : "#marketsector"
     },
     {
-        item : "Recent Work",
-        link : "/"
+        item : "Work History",
+        link : "#workhistory"
+    },
+    {
+        item : "Projects",
+        link : "#projects"
     },
     {
         item : "Blog",
-        link : "/"
+        link : "#blog"
     },
     {
         item : "Contact",
-        link : "/"
+        link : "#contact"
     }
 ]

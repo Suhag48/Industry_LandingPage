@@ -10,7 +10,7 @@ const Hero = () => {
       }, [])
     return(
         <div className="hero" data-aos="fade-up"
-            data-aos-duration="3000">
+            data-aos-duration="2000">
             <div className="hero-content">
                 <h6>DON’T LOOK FURTHER, HERE IS THE KEY</h6>
                 <h1>We’re Industrial solution</h1>

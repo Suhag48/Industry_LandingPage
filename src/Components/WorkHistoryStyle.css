@@ -36,7 +36,7 @@
     line-height: 80px;
     border-radius: 50%;
     font-size: 22px;
-    font-weight: 900;
+    font-weight: 600;
     color: #fff;
     text-align: center;
     background-color: #fab700;
@@ -44,14 +44,20 @@
 }
 
 /* responsive code start */
-@media screen and (max-width: 1110px){
+@media screen and (max-width: 1100px){
     .circle-content{
         grid-template-columns: repeat(2, 1fr);
         padding: 4rem 6rem;
     }
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width: 768px) {
+    .circle-content{
+        padding: 4rem 6rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
     .circle-content{
         grid-template-columns: 1fr;
         padding: 4rem 2rem;

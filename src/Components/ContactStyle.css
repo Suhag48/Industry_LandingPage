@@ -2,9 +2,9 @@
     padding: 6rem 12rem;
 }
 .contact-us h1{
-    font-size: 52px;
+    font-size: 42px;
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
 }
 .contact-form{
@@ -18,7 +18,7 @@
     background-color: #fafafa;
 }
 .contact-form h2{
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 30px;
@@ -41,6 +41,10 @@
     background-color: #fab700;
     border: none;
     color: #fff;
+    transition: all ease-in-out 0.5s;
+}
+.btn:hover{
+    background-color: #000;
 }
 
 /* responsive code starts */

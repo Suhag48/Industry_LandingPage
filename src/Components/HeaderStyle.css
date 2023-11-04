@@ -15,98 +15,101 @@ ul li{
 /* global Css code end */
 
 /* header section Css code starts */
-.header-section{
+header{
+    width: 100%;
+    height: auto;
     background-color: #fafafa;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    align-items: center;
-    padding: 0 20px;
-    height: 80px;
 }
-
-.logo a{
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 40px;
+}
+.logo{
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
-
-
-/* write code for menu icons */
 .menu-icon{
     display: none;
     cursor: pointer;
 }
-
 ul{
     display: flex;
-    justify-content: flex-end;
     column-gap: 30px;
-    padding: 0 90px;
 }
 li a{
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #000300
+    color: #000300;
+    transition: all ease-in-out 0.1s;
+}
+li a:hover{
+    color: #fab700;
 }
 /* responsive header code start */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px){
     .header-section{
-        grid-template-columns: 1fr;
-        flex-direction: column;
-        width: 100%;
-        position: relative;
-        padding: 15px 0;
+        padding: 0 20px;
+    }
+    ul{
+        column-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header-section{
+        padding: 0;
     }
     .logo{
-        justify-content: start;
-        margin-left: 20px;
+        padding-left: 40px;
     }
     .menu-icon{
         display: block;
         position: absolute;
         top: 0;
         right: 0;
-        margin-right: 20px;
-        margin-top: 21px;
+        margin-top: 22px;
+        margin-right: 30px;
     }
-    nav{
-        position: relative;
-    }
-    .navbar-hide{
-        background-color: #000300;
-        text-align: center;
-        padding: 60px 0;
-        margin-top: 15px;
-        flex-direction: column;
+    ul{
+        display: flex;
         justify-content: center;
-        position: absolute;
-        width: 100%;
-        left: -100vw;
-        transition: all ease-in-out 0.8s;
+    }
+    ul li{
+        text-align: center;
+        padding: 15px;
+    }
+    ul li a{
+        color: #fafafa;
     }
     .navbar-visible{
         background-color: #000300;
-        text-align: center;
-        padding: 60px 0;
-        margin-top: 15px;
         flex-direction: column;
-        justify-content: center;
-        position: absolute;
-        right: 0;
-        left: 0;
         width: 100%;
+        height: 90%;
+        position: absolute;
+        left: 0;
+        padding: 60px 0;
+        margin-top: 40px;
         transition: all ease-in-out 0.8s;
     }
-    li{
-        padding: 15px 0;
+    .navbar-hide{
+        background-color: #000300;
+        flex-direction: column;
+        width: 100%;
+        height: 90%;
+        position: absolute;
+        left: -100%;
+        padding: 60px 0;
+        margin-top: 40px;
+        transition: all ease-in-out 0.8s;
     }
-    li a{
-        color: #fff;
-    }
-    
 }
 
 /* responsive header code end */

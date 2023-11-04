@@ -60,10 +60,10 @@
     padding: 10px 5px;
     border: solid 1px #fff;
     background: transparent;
-    color: #fff;
+    color: #9e9e9e;
 }
 .form select option{
-    background: #9e9e9e;
+    background: #fafafa;
     color: #000;
 }
 .form .input-field{
@@ -72,16 +72,19 @@
     background: transparent;
     color: #fff;
 }
-.form input::placeholder{
-    color: #fff;
+.form .input-field::placeholder{
+    color: #9e9e9e;
+    text-transform: capitalize;
 }
 .form .message-field{
     border: solid 1px #fff;
     background: transparent;
     padding: 8px;
+    color: #fff;
 }
 .form textarea::placeholder{
-    color: #fff;
+    color: #9e9e9e;
+    text-transform: capitalize;
 }
 .form button{
     padding: 8px 0;
@@ -102,7 +105,7 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .client-feedback{
         padding: 4rem 2rem;
         grid-template-columns: 1fr;

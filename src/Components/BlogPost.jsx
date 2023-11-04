@@ -7,7 +7,7 @@ import {BiMessageRounded} from "react-icons/bi"
 
 const BlogPost = () => {
     return(
-        <div className="blogPost">
+        <div className="blogPost" id="blog">
             <h1>Latest Posts From Our Blog</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
             <br></br>labore et dolore magna aliqua.</p>
@@ -18,7 +18,10 @@ const BlogPost = () => {
                         const { CardImage, authorImg, authorName, postDate, postReact, postMessage, cardHeading, cardText } = data
 
                         return(
-                            <div key={index} className="card-body">
+                            <div key={index} className="card-body"
+                                data-aos="flip-right"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
                                 <div className="card-content">
                                     <div className="card-image">
                                         <img src={CardImage} alt="" />
